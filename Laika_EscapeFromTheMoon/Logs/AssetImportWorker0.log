@@ -1,0 +1,328 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'fr' Physical Memory: 16185 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Unity\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55652
+Successfully changed project path to: E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
+E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18088] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2909990997 [EditorId] 2909990997 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [18088] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2909990997 [EditorId] 2909990997 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 115.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path E:/Unity/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K2100M (ID=0x11fc)
+    Vendor:   NVIDIA
+    VRAM:     2018 MB
+    Driver:   22.21.13.8573
+Initialize mono
+Mono path[0] = 'E:/Unity/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003375 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 107.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.930 seconds
+Domain Reload Profiling:
+	ReloadAssembly (930ms)
+		BeginReloadAssembly (90ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (711ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (164ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (86ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004979 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.566 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1567ms)
+		BeginReloadAssembly (276ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (136ms)
+		EndReloadAssembly (1135ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (417ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (493ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.5 KB). Loaded Objects now: 3820.
+Memory consumption went from 115.6 MB to 115.5 MB.
+Total: 5.028100 ms (FindLiveObjects: 0.413400 ms CreateObjectMapping: 0.412900 ms MarkObjects: 4.026000 ms  DeleteObjects: 0.174500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7751.113519 seconds.
+  path: Assets/Personnages
+  artifactKey: Guid(132617326fda48e469c4c68ea2c825ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages using Guid(132617326fda48e469c4c68ea2c825ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d81cfcdcbf2432ad6f6e8242b7c13b2') in 0.015042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.074753 seconds.
+  path: Assets/Personnages/Laika
+  artifactKey: Guid(a473eb05d0231b740b98fa73f8b86510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika using Guid(a473eb05d0231b740b98fa73f8b86510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0bb7d4f51077cbdb6f1c133d54a646') in 0.007947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.201745 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1d590f0ff4883fbbe2d9d638061dcf') in 1.426218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.522582 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d93da76f024fcaacfb52f9214b8aa7') in 0.160174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.966219 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bc439ef3578f4848dbd60b413e33db') in 0.144911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.656480 seconds.
+  path: Assets/Personnages/Laika/Actions
+  artifactKey: Guid(3d94dc31ca3ff4642a030236c1d747b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Actions using Guid(3d94dc31ca3ff4642a030236c1d747b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58b2630bc27ff7fc4e9d766e146fbc4') in 0.007922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.636651 seconds.
+  path: Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx
+  artifactKey: Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx using Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438eb8b3c691ea1896f7b7cfa84ff618') in 0.020012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.803472 seconds.
+  path: Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx
+  artifactKey: Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx using Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447a929a4593942f350f1ae364b75fd5') in 0.014392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.179230 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc94a7d93764d9ced9c6522ac9f644ca') in 0.172568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.473213 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434105bd0351e4e2e12154fcda220bf4') in 0.134836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3081.506712 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe8f6d87370ef5d3a0341ecdc113c46') in 0.179227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.583850 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ab9592f920785acdbb0a8085e86528') in 0.145739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.296989 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d7b87449cbc775b2e20d51ff94dc77') in 0.155435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.826983 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6df1ba2e298ee7044f86eed4e56275d') in 0.148867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.529079 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897dff0bb14bfae4d3369ddc90b4a166') in 0.146125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.452192 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747015bb27a547d920291e52a6b35dae') in 0.149123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.274194 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ae89a365f55158547fa958b0362a34') in 0.152650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.538808 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de33c2ba747475189f112ce9fcc6f156') in 0.150572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 510.550848 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e2030761efba95463215f8ceb4513e') in 0.139412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.285082 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7e07f8d029f5c2e7f11618178ac281') in 0.160002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.188088 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c361f19feb1086a170a3c39d0444247c') in 0.176033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.649839 seconds.
+  path: Assets/Personnages/Laika/PERSO_Laika.fbx
+  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628f472ed2244e36ddb70bdb6d664445') in 0.155905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.835707 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.008196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.718973 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c09e2825b3da913df491ba3824c59a5') in 0.008343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.299103 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28534143b65cb1102eca954bdafc8d35') in 0.002262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.928941 seconds.
+  path: Assets/Scenes/SampleScene 1.unity
+  artifactKey: Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene 1.unity using Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13b1be0ab5091f6ad8520558ca0c4fd') in 0.007701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.714386 seconds.
+  path: Assets/Scenes/Laika_Mouvements.unity
+  artifactKey: Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Laika_Mouvements.unity using Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c1538988dd55c55b5e81371143632c') in 0.007596 seconds 
