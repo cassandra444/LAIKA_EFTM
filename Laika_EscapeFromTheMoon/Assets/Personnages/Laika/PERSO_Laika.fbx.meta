@@ -3,7 +3,17 @@ guid: 075a3b70072dda34a9bac4a08bec927d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_LaikaBody
+    second: {fileID: 2100000, guid: f07109c9c20c5d04fae10f48fd999480, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_LaikaClothes
+    second: {fileID: 2100000, guid: 053ac240fc2a98141bd2f5a56299219f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,9 +43,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: ANIM_Laika_Base
-      takeName: Laika_Base.001
-      internalID: -6488297212139825281
+      name: Laika_Base
+      takeName: Laika_Base
+      internalID: -4179202535429077950
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -62,11 +72,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ANIM_Laika_Idle_V1
-      takeName: Laika_Idle_V1.001
-      internalID: 1975482653590418992
-      firstFrame: 0
-      lastFrame: 114
+      name: Laika_Idle_V1
+      takeName: Laika_Idle_V1
+      internalID: 1742140537416936535
+      firstFrame: 100
+      lastFrame: 215
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -91,11 +101,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ANIM_Laika_Walk_V1
-      takeName: Laika_Walk_V1.002
-      internalID: 5173363001744690950
-      firstFrame: 0
-      lastFrame: 20
+      name: Laika_Walk_V1
+      takeName: Laika_Walk_V1
+      internalID: 2085763898709568527
+      firstFrame: 100
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -120,11 +130,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ANIM_Laika_Run_V1
-      takeName: Laika_Run_V1.001
-      internalID: 6651741172589507759
-      firstFrame: 0
-      lastFrame: 15
+      name: Laika_Run_V1
+      takeName: Laika_Run_V1
+      internalID: -2168595553596624816
+      firstFrame: 100
+      lastFrame: 115
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -156,18 +166,18 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
-    weldVertices: 0
-    bakeAxisConversion: 1
+    weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
     skinWeightsMode: 0
     maxBonesPerVertex: 4

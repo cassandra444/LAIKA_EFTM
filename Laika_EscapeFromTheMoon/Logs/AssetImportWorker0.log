@@ -15,7 +15,7 @@ E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55652
+57343
 Successfully changed project path to: E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
 E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18088] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2909990997 [EditorId] 2909990997 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [6332] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2423875777 [EditorId] 2423875777 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18088] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2909990997 [EditorId] 2909990997 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [6332] Host "[IP] 192.168.1.31 [Port] 0 [Flags] 2 [Guid] 2423875777 [EditorId] 2423875777 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OV1K0U7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 115.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 107.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path E:/Unity/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'E:/Unity/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Unity/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56196
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003375 seconds.
+Registered in 0.003449 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 107.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 135.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.930 seconds
+- Completed reload, in  0.965 seconds
 Domain Reload Profiling:
-	ReloadAssembly (930ms)
-		BeginReloadAssembly (90ms)
+	ReloadAssembly (966ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (711ms)
-			LoadAssemblies (88ms)
+		EndReloadAssembly (732ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (164ms)
+			SetupTypeCache (195ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (426ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (418ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (86ms)
+				InitializePlatformSupportModulesInManaged (87ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (108ms)
+				RefreshPlugins (136ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
+				ProcessInitializeOnLoadAttributes (132ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004979 seconds.
+Registered in 0.005155 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.566 seconds
+- Completed reload, in  1.467 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1567ms)
-		BeginReloadAssembly (276ms)
+	ReloadAssembly (1468ms)
+		BeginReloadAssembly (251ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (136ms)
-		EndReloadAssembly (1135ms)
-			LoadAssemblies (105ms)
+			CreateAndSetChildDomain (131ms)
+		EndReloadAssembly (1074ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (417ms)
+			SetupTypeCache (397ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (493ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (460ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (325ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.5 KB). Loaded Objects now: 3820.
+Unloading 27 unused Assets / (113.9 KB). Loaded Objects now: 3820.
 Memory consumption went from 115.6 MB to 115.5 MB.
-Total: 5.028100 ms (FindLiveObjects: 0.413400 ms CreateObjectMapping: 0.412900 ms MarkObjects: 4.026000 ms  DeleteObjects: 0.174500 ms)
+Total: 4.958100 ms (FindLiveObjects: 0.541200 ms CreateObjectMapping: 0.518900 ms MarkObjects: 3.747800 ms  DeleteObjects: 0.148700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,163 +166,1501 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 7751.113519 seconds.
-  path: Assets/Personnages
-  artifactKey: Guid(132617326fda48e469c4c68ea2c825ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages using Guid(132617326fda48e469c4c68ea2c825ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d81cfcdcbf2432ad6f6e8242b7c13b2') in 0.015042 seconds 
+  Time since last request: 91528.760555 seconds.
+  path: Assets/World
+  artifactKey: Guid(562173624cee934488d3fb7cfc0e96ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World using Guid(562173624cee934488d3fb7cfc0e96ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cf98a33a08279c8fccf6c581d946cf') in 0.014682 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.074753 seconds.
-  path: Assets/Personnages/Laika
-  artifactKey: Guid(a473eb05d0231b740b98fa73f8b86510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika using Guid(a473eb05d0231b740b98fa73f8b86510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc0bb7d4f51077cbdb6f1c133d54a646') in 0.007947 seconds 
+  Time since last request: 2.326776 seconds.
+  path: Assets/World/FBX
+  artifactKey: Guid(2dfeed786c2a84f4b9650d7b480c026a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/FBX using Guid(2dfeed786c2a84f4b9650d7b480c026a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c39afe377de6b249d54ba3fad702a2d') in 0.007624 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.201745 seconds.
+  Time since last request: 7.513688 seconds.
+  path: Assets/World/Materials
+  artifactKey: Guid(82dd8d85abf9a1b408f686c26b60136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials using Guid(82dd8d85abf9a1b408f686c26b60136f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c253c86b6f421e55521a09f76be0d2c') in 0.008061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.253236 seconds.
+  path: Assets/World/Materials/Maquettes
+  artifactKey: Guid(e5bdb8c6ded444a4abb27584da3ea08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes using Guid(e5bdb8c6ded444a4abb27584da3ea08d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e032e3c7f64e93d7a3c7beab450163') in 0.007984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.299903 seconds.
+  path: Assets/World/Materials/Maquettes/t_Checker_LEFTM.tga
+  artifactKey: Guid(f30dbd3dbee680c42b1d0cee6c0e5d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes/t_Checker_LEFTM.tga using Guid(f30dbd3dbee680c42b1d0cee6c0e5d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661b00d1e881016bdc33e3473bc7cdd4') in 0.107877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.001231 seconds.
+  path: Assets/World/Materials/Maquettes/Mat_CheckerMaquette.mat
+  artifactKey: Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes/Mat_CheckerMaquette.mat using Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667999c0b90a48f81449a64e5580a7bb') in 0.218601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 329.702725 seconds.
+  path: Assets/World/Materials/Maquettes/Mat_CheckerMaquette_5m.mat
+  artifactKey: Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes/Mat_CheckerMaquette_5m.mat using Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f40d9eb618e2dbab05212e2c8b4ed8') in 0.021233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.244885 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1d590f0ff4883fbbe2d9d638061dcf') in 1.426218 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae24053f213b4fe2564caeae1f9d7f4') in 0.273854 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.522582 seconds.
+  Time since last request: 87.846340 seconds.
+  path: Assets/World/Materials/Maquettes/Mat_CheckerMaquette_5m.mat
+  artifactKey: Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes/Mat_CheckerMaquette_5m.mat using Guid(4d278e27e6d6a684c80b0f0a5dbddd0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243a396ac7df723ce958c9daa2a2e7a2') in 0.018034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.345932 seconds.
+  path: Assets/Personnages/Laika/Materi
+  artifactKey: Guid(38640e2b6ab1f0d40843a99b001515e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materi using Guid(38640e2b6ab1f0d40843a99b001515e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b765d438156451a1c4ebbd2d04948b2') in 0.009574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.603388 seconds.
+  path: Assets/Personnages/Laika/Materials
+  artifactKey: Guid(38640e2b6ab1f0d40843a99b001515e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials using Guid(38640e2b6ab1f0d40843a99b001515e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd932743f8ba5f9ea9db67e7a66a3ae7b') in 0.002098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.058412 seconds.
+  path: Assets/Personnages/Laika/Materials/t_LaikaBody_BaseColor.tga
+  artifactKey: Guid(1d7f1d43f2c47704cb19fed6375671df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/t_LaikaBody_BaseColor.tga using Guid(1d7f1d43f2c47704cb19fed6375671df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b925dcdcd0a727b888920f3d5b6ad74') in 0.065957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Personnages/Laika/Materials/t_LaikaBody_Normal.tga
+  artifactKey: Guid(5878d9b98f25fcc479204f0777c1eb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/t_LaikaBody_Normal.tga using Guid(5878d9b98f25fcc479204f0777c1eb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a3ddb26a946a9e7c49c1ad813274d7') in 0.026054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.420368 seconds.
+  path: Assets/Personnages/Laika/Materials/t_LaikaBody_Normal.tga
+  artifactKey: Guid(5878d9b98f25fcc479204f0777c1eb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/t_LaikaBody_Normal.tga using Guid(5878d9b98f25fcc479204f0777c1eb17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadd072c5334803f45f415bd007ca407') in 0.027586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.696133 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_Laika.mat
+  artifactKey: Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_Laika.mat using Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f12af285794d6385c46c9841ca67ac') in 0.021042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.684437 seconds.
+  path: Assets/Personnages/Laika/Materials/S_Global
+  artifactKey: Guid(d73622040046b3444a8dfb4f6316a6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/S_Global using Guid(d73622040046b3444a8dfb4f6316a6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381e3615510a10492c72912fa9d2abfc') in 0.008035 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005364 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 182.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.361 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2362ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (2017ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (579ms)
+			ReleaseScriptCaches (28ms)
+			RebuildScriptCaches (166ms)
+			SetupLoadedEditorAssemblies (896ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (57ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (182ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (418ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4319 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.7 MB). Loaded Objects now: 4824.
+Memory consumption went from 163.6 MB to 162.8 MB.
+Total: 4.843100 ms (FindLiveObjects: 0.347700 ms CreateObjectMapping: 0.172300 ms MarkObjects: 3.947800 ms  DeleteObjects: 0.373900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 238.840577 seconds.
+  path: Assets/Personnages/Laika/Materials/S_Global.shadergraph
+  artifactKey: Guid(faf96748fef563243837bec753e343e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/S_Global.shadergraph using Guid(faf96748fef563243837bec753e343e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c241465a0aa76ee99724caa8c916b9b7') in 0.033645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 134.162768 seconds.
+  path: Assets/Personnages/Laika/Materials/S_Global.shadergraph
+  artifactKey: Guid(faf96748fef563243837bec753e343e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/S_Global.shadergraph using Guid(faf96748fef563243837bec753e343e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbc88ce5c58b99027ffa2007a881eba') in 0.083862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.556471 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_LaikaBody.mat
+  artifactKey: Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_LaikaBody.mat using Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486bc3b1cee97dee26002cefc41e1ebc') in 1.034228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.470492 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_LaikaBody 1.mat
+  artifactKey: Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_LaikaBody 1.mat using Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73473e14aef8c966b8986dcf25428a1') in 0.035114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.998818 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_LaikaClothes.mat
+  artifactKey: Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_LaikaClothes.mat using Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a78afbd16769c7f18713acafdfd6676') in 0.076100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.139898 seconds.
+  path: Assets/Personnages/Laika/Materials/t_LaikaClothes_BaseColor.tga
+  artifactKey: Guid(19e367986b0ff0d4e8197f8e6561f83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/t_LaikaClothes_BaseColor.tga using Guid(19e367986b0ff0d4e8197f8e6561f83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65bbe6e537bc2ea114804a84d4ceea8') in 0.040025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.043415 seconds.
+  path: Assets/Personnages/Laika/Materials/t_LaikaClothes_Normal.tga
+  artifactKey: Guid(7a7b44a77d578b34e84e29b96c79dd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/t_LaikaClothes_Normal.tga using Guid(7a7b44a77d578b34e84e29b96c79dd5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355fd80b6ee6ba3076e7af3dcd2a6dce') in 0.242588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.786588 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_LaikaBody.mat
+  artifactKey: Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_LaikaBody.mat using Guid(f07109c9c20c5d04fae10f48fd999480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0957d14b744babb5d48c61f370ff556e') in 1.072304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.784185 seconds.
+  path: Assets/Personnages/Laika/Materials/Maps
+  artifactKey: Guid(0163a2c754c233e46a4861538e2ff3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Maps using Guid(0163a2c754c233e46a4861538e2ff3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763add52d0953e2874b009f7628520b5') in 0.008174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.216651 seconds.
+  path: Assets/Personnages/Laika/Materials/Mat_LaikaClothes.mat
+  artifactKey: Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/Materials/Mat_LaikaClothes.mat using Guid(053ac240fc2a98141bd2f5a56299219f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a63e84c593f81a416d198816ce6560') in 0.033226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.074523 seconds.
+  path: Assets/Personnages/Laika/ANIM_Laika.controller
+  artifactKey: Guid(95f01e157de03b84d83ded35f8de1b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/ANIM_Laika.controller using Guid(95f01e157de03b84d83ded35f8de1b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54987ccbee4cd986f3aa5fcee92c8fe0') in 0.011324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 226.562234 seconds.
+  path: Assets/Personnages/Laika/ANIM_Laika.controller
+  artifactKey: Guid(95f01e157de03b84d83ded35f8de1b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personnages/Laika/ANIM_Laika.controller using Guid(95f01e157de03b84d83ded35f8de1b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7aa9f1714e166102bb5511e9b81a295') in 0.007421 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004472 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.648 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1649ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1310ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (611ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (357ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4320 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4829.
+Memory consumption went from 165.0 MB to 164.2 MB.
+Total: 4.206300 ms (FindLiveObjects: 0.492400 ms CreateObjectMapping: 0.227900 ms MarkObjects: 3.151900 ms  DeleteObjects: 0.333000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004444 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.663 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1664ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1337ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (617ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4832.
+Memory consumption went from 164.8 MB to 164.0 MB.
+Total: 4.947100 ms (FindLiveObjects: 0.582500 ms CreateObjectMapping: 0.185700 ms MarkObjects: 3.821000 ms  DeleteObjects: 0.354900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004568 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.602 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1603ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1287ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (458ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (571ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (330ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4835.
+Memory consumption went from 164.8 MB to 164.1 MB.
+Total: 4.429100 ms (FindLiveObjects: 0.446300 ms CreateObjectMapping: 0.158900 ms MarkObjects: 3.443900 ms  DeleteObjects: 0.378800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004884 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.618 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1619ms)
+		BeginReloadAssembly (175ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1294ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (451ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (591ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (341ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4838.
+Memory consumption went from 164.8 MB to 164.1 MB.
+Total: 4.175200 ms (FindLiveObjects: 0.370700 ms CreateObjectMapping: 0.158800 ms MarkObjects: 3.234000 ms  DeleteObjects: 0.410800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004647 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.631 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1632ms)
+		BeginReloadAssembly (201ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (1293ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (455ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (587ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4841.
+Memory consumption went from 164.8 MB to 164.1 MB.
+Total: 4.840200 ms (FindLiveObjects: 0.430200 ms CreateObjectMapping: 0.259800 ms MarkObjects: 3.783500 ms  DeleteObjects: 0.365600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005295 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.689 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1690ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1374ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (502ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (615ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (362ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4844.
+Memory consumption went from 164.8 MB to 164.1 MB.
+Total: 5.310400 ms (FindLiveObjects: 0.516000 ms CreateObjectMapping: 0.491200 ms MarkObjects: 3.920300 ms  DeleteObjects: 0.381700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 589.203328 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d93da76f024fcaacfb52f9214b8aa7') in 0.160174 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff3b6caec20264d030f19a33d12dd5b') in 0.506557 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.966219 seconds.
+  Time since last request: 41.512327 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bc439ef3578f4848dbd60b413e33db') in 0.144911 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0086fc79ec17d8c90a2e9eabd4eac429') in 0.168033 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.656480 seconds.
-  path: Assets/Personnages/Laika/Actions
-  artifactKey: Guid(3d94dc31ca3ff4642a030236c1d747b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/Actions using Guid(3d94dc31ca3ff4642a030236c1d747b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58b2630bc27ff7fc4e9d766e146fbc4') in 0.007922 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.636651 seconds.
-  path: Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx
-  artifactKey: Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx using Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438eb8b3c691ea1896f7b7cfa84ff618') in 0.020012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.803472 seconds.
-  path: Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx
-  artifactKey: Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/Actions/ACTION_TestShapeKey.fbx using Guid(45aca982640740a48989c7d08a1a7f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447a929a4593942f350f1ae364b75fd5') in 0.014392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 88.179230 seconds.
+  Time since last request: 4.257023 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc94a7d93764d9ced9c6522ac9f644ca') in 0.172568 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c88678011be29d0345ebc78e79ed0bc') in 0.163635 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004710 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.663 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1664ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1324ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (608ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4847.
+Memory consumption went from 164.9 MB to 164.2 MB.
+Total: 5.495400 ms (FindLiveObjects: 0.389400 ms CreateObjectMapping: 0.371400 ms MarkObjects: 3.916100 ms  DeleteObjects: 0.816900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007372 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.619 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1620ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1299ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (601ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4850.
+Memory consumption went from 164.9 MB to 164.2 MB.
+Total: 6.110600 ms (FindLiveObjects: 0.466100 ms CreateObjectMapping: 0.496900 ms MarkObjects: 4.727100 ms  DeleteObjects: 0.419200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.473213 seconds.
+  Time since last request: 327.469250 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '434105bd0351e4e2e12154fcda220bf4') in 0.134836 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3c66641f7b3dbe7212b60e63339b48') in 0.264991 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3081.506712 seconds.
+  Time since last request: 23.876431 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe8f6d87370ef5d3a0341ecdc113c46') in 0.179227 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5134b33878e9445d8258cb9c6baec99a') in 0.210069 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.583850 seconds.
+  Time since last request: 18.027374 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ab9592f920785acdbb0a8085e86528') in 0.145739 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239f31eca579af4d4a85e1894b071caf') in 0.155276 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.296989 seconds.
+  Time since last request: 77.416633 seconds.
+  path: Assets/World/Materials/Maquettes/t_Checker_LEFTM.tga
+  artifactKey: Guid(f30dbd3dbee680c42b1d0cee6c0e5d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/World/Materials/Maquettes/t_Checker_LEFTM.tga using Guid(f30dbd3dbee680c42b1d0cee6c0e5d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0083902581ec955ef8f5ec1f7e48e6ad') in 0.452317 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004691 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.624 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1625ms)
+		BeginReloadAssembly (178ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1301ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (438ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (610ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4853.
+Memory consumption went from 165.0 MB to 164.3 MB.
+Total: 5.288100 ms (FindLiveObjects: 0.593000 ms CreateObjectMapping: 0.575300 ms MarkObjects: 3.684000 ms  DeleteObjects: 0.434700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004558 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1640ms)
+		BeginReloadAssembly (177ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1310ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (464ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (607ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (352ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4856.
+Memory consumption went from 165.0 MB to 164.3 MB.
+Total: 5.670300 ms (FindLiveObjects: 0.480900 ms CreateObjectMapping: 0.432500 ms MarkObjects: 4.047200 ms  DeleteObjects: 0.707900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005234 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1640ms)
+		BeginReloadAssembly (179ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1314ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (470ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (594ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4859.
+Memory consumption went from 165.0 MB to 164.3 MB.
+Total: 7.085000 ms (FindLiveObjects: 0.426200 ms CreateObjectMapping: 0.940100 ms MarkObjects: 5.361400 ms  DeleteObjects: 0.356100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 749.399428 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d7b87449cbc775b2e20d51ff94dc77') in 0.155435 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef78cb7b79e6a2ff7e3a6a31ce1b1347') in 0.258010 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.826983 seconds.
+  Time since last request: 25.269679 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6df1ba2e298ee7044f86eed4e56275d') in 0.148867 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3483f8f517359f6d061f6c77f01862e2') in 0.157665 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004410 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.645 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1646ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1327ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (455ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (608ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4862.
+Memory consumption went from 165.1 MB to 164.3 MB.
+Total: 5.534700 ms (FindLiveObjects: 0.592500 ms CreateObjectMapping: 0.410900 ms MarkObjects: 4.079300 ms  DeleteObjects: 0.450200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.529079 seconds.
+  Time since last request: 415.711194 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897dff0bb14bfae4d3369ddc90b4a166') in 0.146125 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833743ccbb9c60696b91d26592544584') in 0.249986 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.452192 seconds.
+  Time since last request: 10.248825 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747015bb27a547d920291e52a6b35dae') in 0.149123 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80aadeb750543363c515d51dd149c5b8') in 0.174390 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.274194 seconds.
+  Time since last request: 60.065793 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ae89a365f55158547fa958b0362a34') in 0.152650 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00da8035bccb160a7d58029dcdde34ef') in 0.180220 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.538808 seconds.
+  Time since last request: 149.041113 seconds.
   path: Assets/Personnages/Laika/PERSO_Laika.fbx
   artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de33c2ba747475189f112ce9fcc6f156') in 0.150572 seconds 
+Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e78943052cb3b8de190da672578705') in 0.422396 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 510.550848 seconds.
-  path: Assets/Personnages/Laika/PERSO_Laika.fbx
-  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e2030761efba95463215f8ceb4513e') in 0.139412 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004918 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.641 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1642ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1312ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (598ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (340ms)
+				ProcessInitializeOnLoadMethodAttributes (113ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4865.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 6.407200 ms (FindLiveObjects: 0.418100 ms CreateObjectMapping: 0.445600 ms MarkObjects: 5.004000 ms  DeleteObjects: 0.538000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 68.285082 seconds.
-  path: Assets/Personnages/Laika/PERSO_Laika.fbx
-  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7e07f8d029f5c2e7f11618178ac281') in 0.160002 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004511 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.642 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1643ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1322ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (461ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (603ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (351ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4868.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 7.017500 ms (FindLiveObjects: 0.940200 ms CreateObjectMapping: 0.808700 ms MarkObjects: 4.767500 ms  DeleteObjects: 0.499600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 15.188088 seconds.
-  path: Assets/Personnages/Laika/PERSO_Laika.fbx
-  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c361f19feb1086a170a3c39d0444247c') in 0.176033 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005016 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.681 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1682ms)
+		BeginReloadAssembly (177ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1361ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (477ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (619ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (341ms)
+				ProcessInitializeOnLoadMethodAttributes (122ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4871.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 6.049800 ms (FindLiveObjects: 0.408800 ms CreateObjectMapping: 0.434000 ms MarkObjects: 4.490600 ms  DeleteObjects: 0.714900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 52.649839 seconds.
-  path: Assets/Personnages/Laika/PERSO_Laika.fbx
-  artifactKey: Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Personnages/Laika/PERSO_Laika.fbx using Guid(075a3b70072dda34a9bac4a08bec927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '628f472ed2244e36ddb70bdb6d664445') in 0.155905 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004764 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.620 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1622ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1327ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (453ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (622ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (347ms)
+				ProcessInitializeOnLoadMethodAttributes (124ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4874.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 6.265700 ms (FindLiveObjects: 0.454400 ms CreateObjectMapping: 0.494000 ms MarkObjects: 4.948600 ms  DeleteObjects: 0.367100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 56.835707 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.008196 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006377 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.631 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1632ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1317ms)
+			LoadAssemblies (117ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (459ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (596ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4877.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 6.027500 ms (FindLiveObjects: 0.417300 ms CreateObjectMapping: 0.400500 ms MarkObjects: 4.834000 ms  DeleteObjects: 0.374600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.718973 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c09e2825b3da913df491ba3824c59a5') in 0.008343 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007203 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.716 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1717ms)
+		BeginReloadAssembly (194ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1374ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (481ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (618ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4880.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 5.069800 ms (FindLiveObjects: 0.425900 ms CreateObjectMapping: 0.628900 ms MarkObjects: 3.621700 ms  DeleteObjects: 0.392100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 69.299103 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28534143b65cb1102eca954bdafc8d35') in 0.002262 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007344 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1708ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1373ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (473ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (639ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (366ms)
+				ProcessInitializeOnLoadMethodAttributes (117ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4883.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 8.739200 ms (FindLiveObjects: 0.634000 ms CreateObjectMapping: 0.885800 ms MarkObjects: 6.765500 ms  DeleteObjects: 0.452500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 6.928941 seconds.
-  path: Assets/Scenes/SampleScene 1.unity
-  artifactKey: Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene 1.unity using Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13b1be0ab5091f6ad8520558ca0c4fd') in 0.007701 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007145 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.686 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1687ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1350ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (465ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (624ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (353ms)
+				ProcessInitializeOnLoadMethodAttributes (121ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4886.
+Memory consumption went from 165.3 MB to 164.6 MB.
+Total: 5.273600 ms (FindLiveObjects: 0.400200 ms CreateObjectMapping: 0.422200 ms MarkObjects: 4.046200 ms  DeleteObjects: 0.403700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 26.714386 seconds.
-  path: Assets/Scenes/Laika_Mouvements.unity
-  artifactKey: Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Laika_Mouvements.unity using Guid(cd1136bc434a20946932311f285c72a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c1538988dd55c55b5e81371143632c') in 0.007596 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006200 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Laika_Game\LAIKA_EFTM\Laika_EscapeFromTheMoon\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.716 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1717ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1387ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (633ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (104ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4318 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (0.7 MB). Loaded Objects now: 4889.
+Memory consumption went from 165.4 MB to 164.6 MB.
+Total: 5.586000 ms (FindLiveObjects: 0.415900 ms CreateObjectMapping: 0.383200 ms MarkObjects: 4.422300 ms  DeleteObjects: 0.363100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
