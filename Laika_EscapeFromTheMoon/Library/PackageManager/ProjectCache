@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638163032969622937
-    m_Hash: 4160293852
+      ticks: 638163076311710822
+    m_Hash: 3506308495
   m_LockFileStatus:
     m_FilePath: E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638163032970181922
-    m_Hash: 3068382834
+      ticks: 638163076311720808
+    m_Hash: 521150794
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
