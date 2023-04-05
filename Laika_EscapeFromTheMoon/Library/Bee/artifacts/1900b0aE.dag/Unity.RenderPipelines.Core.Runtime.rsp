@@ -117,9 +117,10 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_VR_MODULE
 -define:ENABLE_XR_MODULE
+-define:ENABLE_INPUT_SYSTEM_PACKAGE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"E:/Laika_Game/LAIKA_EFTM/Laika_EscapeFromTheMoon/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/log4netPlastic.dll"
@@ -341,6 +342,7 @@
 -r:"E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 -r:"E:/Unity/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Library/PackageCache/com.unity.render-pipelines.core@12.1.8/Runtime/AssemblyInfo.cs"
