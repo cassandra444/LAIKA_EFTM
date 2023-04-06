@@ -6,7 +6,10 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     InputActionLEFTM laikaControls;
-    [SerializeField] private Vector2 _mouvementInput;
+    public Vector2 _mouvementInput;
+    public float _verticalInput;
+    public float _horizontalInput;
+
 
 
     private void OnEnable()
@@ -28,5 +31,16 @@ public class InputManager : MonoBehaviour
     private void PerformAttack()
     {
         Debug.Log("Attaque");
+    }
+
+    public void HandleAllInputs()
+    {
+        HandleMovementsInput();
+    }
+
+    private void HandleMovementsInput()
+    {
+        _verticalInput = _mouvementInput.y;
+        _horizontalInput = _mouvementInput.x;
     }
 }

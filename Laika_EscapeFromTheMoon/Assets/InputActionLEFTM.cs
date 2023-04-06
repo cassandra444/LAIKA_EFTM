@@ -29,7 +29,7 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Mouvements"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""a447668a-41c3-44c1-903b-a82880f58174"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
