@@ -5,8 +5,11 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    InputActionLEFTM laikaControls;
+    public InputActionLEFTM _laikaControls;
+    public LaikaAnimation _laikaAnimation;
+
     public Vector2 _mouvementInput;
+    private float _moveAmount;
     public float _verticalInput;
     public float _horizontalInput;
 
@@ -14,18 +17,18 @@ public class InputManager : MonoBehaviour
 
     private void OnEnable()
     {
-        if(laikaControls == null)
+        if(_laikaControls == null)
         {
-            laikaControls = new InputActionLEFTM();
-            laikaControls.LaikaInput.Mouvements.performed += i => _mouvementInput = i.ReadValue<Vector2>();
+            _laikaControls = new InputActionLEFTM();
+            _laikaControls.LaikaInput.Mouvements.performed += i => _mouvementInput = i.ReadValue<Vector2>();
         }
 
-        laikaControls.Enable();
+        _laikaControls.Enable();
     }
 
     private void OnDisable()
     {
-        laikaControls.Disable();
+        _laikaControls.Disable();
     }
 
     private void PerformAttack()
@@ -42,5 +45,7 @@ public class InputManager : MonoBehaviour
     {
         _verticalInput = _mouvementInput.y;
         _horizontalInput = _mouvementInput.x;
+        _moveAmount = Mathf.Clamp01(Mathf.Abs(_horizontalInput) + Mathf.Abs(_verticalInput));
+        _laikaAnimation.UpdateAnimatorValue( 0f, _moveAmount);
     }
 }
