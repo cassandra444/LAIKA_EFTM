@@ -374,6 +374,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/InputActionLEFTM.cs"
+"Assets/Personnages/Camera/CameraManager.cs"
 "Assets/Personnages/Laika/InputManager.cs"
 "Assets/Personnages/Laika/LaikaAnimation.cs"
 "Assets/Personnages/Laika/LaikaLocation.cs"

@@ -5,6 +5,7 @@ using UnityEngine;
 public class LaikaManager : MonoBehaviour
 {
     InputManager _inputManager;
+    public CameraManager _cameraManager;
     LaikaLocation _laikaLocation;
 
     private void Awake()
@@ -21,6 +22,11 @@ public class LaikaManager : MonoBehaviour
     private void FixedUpdate()
     {
         _laikaLocation.HandleAllMovements();
+    }
+
+    private void LateUpdate()
+    {
+        _cameraManager.HandleAllCameraMovements();
     }
 
 }

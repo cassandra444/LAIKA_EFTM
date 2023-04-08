@@ -9,9 +9,14 @@ public class InputManager : MonoBehaviour
     public LaikaAnimation _laikaAnimation;
 
     public Vector2 _mouvementInput;
+    public Vector2 _cameraInput;
+
+
     private float _moveAmount;
     public float _verticalInput;
     public float _horizontalInput;
+    public float _cameraInputX;
+    public float _cameraInputY;
 
 
 
@@ -21,6 +26,7 @@ public class InputManager : MonoBehaviour
         {
             _laikaControls = new InputActionLEFTM();
             _laikaControls.LaikaInput.Mouvements.performed += i => _mouvementInput = i.ReadValue<Vector2>();
+            _laikaControls.LaikaInput.Camera.performed += i => _cameraInput = i.ReadValue<Vector2>();
         }
 
         _laikaControls.Enable();
@@ -45,6 +51,10 @@ public class InputManager : MonoBehaviour
     {
         _verticalInput = _mouvementInput.y;
         _horizontalInput = _mouvementInput.x;
+
+        _cameraInputX = _cameraInput.x;
+        _cameraInputY = _cameraInput.y;
+
         _moveAmount = Mathf.Clamp01(Mathf.Abs(_horizontalInput) + Mathf.Abs(_verticalInput));
         _laikaAnimation.UpdateAnimatorValue( 0f, _moveAmount);
     }

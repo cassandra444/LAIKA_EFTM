@@ -44,6 +44,15 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Camera"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8ab66a39-7ab9-43cc-97c9-17944bd9c0fd"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -134,6 +143,72 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
                     ""action"": ""Attaque"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ca626e11-146b-4705-a9ed-1d379f1ef546"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""ff1498db-d598-4248-812b-eb3013ff1fcf"",
+                    ""path"": ""2DVector(mode=2)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""e34b6121-5b34-4773-8258-005da82fcc96"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""86606b24-6cd6-4d51-baa4-28b595ea9c70"",
+                    ""path"": ""<Gamepad>/rightStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""6265bc72-cb99-4a0e-8d74-12a722f16e49"",
+                    ""path"": ""<Gamepad>/rightStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""423922b2-2a6e-4f61-ab15-72817308a8a5"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Camera"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -144,6 +219,7 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
         m_LaikaInput = asset.FindActionMap("LaikaInput", throwIfNotFound: true);
         m_LaikaInput_Mouvements = m_LaikaInput.FindAction("Mouvements", throwIfNotFound: true);
         m_LaikaInput_Attaque = m_LaikaInput.FindAction("Attaque", throwIfNotFound: true);
+        m_LaikaInput_Camera = m_LaikaInput.FindAction("Camera", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,12 +281,14 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
     private ILaikaInputActions m_LaikaInputActionsCallbackInterface;
     private readonly InputAction m_LaikaInput_Mouvements;
     private readonly InputAction m_LaikaInput_Attaque;
+    private readonly InputAction m_LaikaInput_Camera;
     public struct LaikaInputActions
     {
         private @InputActionLEFTM m_Wrapper;
         public LaikaInputActions(@InputActionLEFTM wrapper) { m_Wrapper = wrapper; }
         public InputAction @Mouvements => m_Wrapper.m_LaikaInput_Mouvements;
         public InputAction @Attaque => m_Wrapper.m_LaikaInput_Attaque;
+        public InputAction @Camera => m_Wrapper.m_LaikaInput_Camera;
         public InputActionMap Get() { return m_Wrapper.m_LaikaInput; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -226,6 +304,9 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
                 @Attaque.started -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
                 @Attaque.performed -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
                 @Attaque.canceled -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
+                @Camera.started -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
+                @Camera.performed -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
+                @Camera.canceled -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
             }
             m_Wrapper.m_LaikaInputActionsCallbackInterface = instance;
             if (instance != null)
@@ -236,6 +317,9 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
                 @Attaque.started += instance.OnAttaque;
                 @Attaque.performed += instance.OnAttaque;
                 @Attaque.canceled += instance.OnAttaque;
+                @Camera.started += instance.OnCamera;
+                @Camera.performed += instance.OnCamera;
+                @Camera.canceled += instance.OnCamera;
             }
         }
     }
@@ -244,5 +328,6 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
     {
         void OnMouvements(InputAction.CallbackContext context);
         void OnAttaque(InputAction.CallbackContext context);
+        void OnCamera(InputAction.CallbackContext context);
     }
 }
