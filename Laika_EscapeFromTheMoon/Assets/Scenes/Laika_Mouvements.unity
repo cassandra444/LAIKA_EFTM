@@ -205,7 +205,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138321504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -435,7 +435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241664425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 2, z: 5.26}
+  m_LocalPosition: {x: -6.77, y: 2, z: 6.26}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1057,12 +1057,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _laikaAnimation: {fileID: 856966616}
+  _laikaLocation: {fileID: 856966612}
   _mouvementInput: {x: 0, y: 0}
   _cameraInput: {x: 0, y: 0}
+  _moveAmount: 0
   _verticalInput: 0
   _horizontalInput: 0
   _cameraInputX: 0
   _cameraInputY: 0
+  _sprintInput: 0
 --- !u!4 &856966611
 Transform:
   m_ObjectHideFlags: 0
@@ -1093,8 +1096,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraObject: {fileID: 963194228}
   _laikaRigidbody: {fileID: 856966615}
-  _movementSpeed: 7
-  _rotationSpeed: 15
+  _isSprinting: 0
+  _walkingSpeed: 1.5
+  _sprintingSpeed: 8
+  _runningSpeed: 3
+  _rotationSpeed: 8
 --- !u!114 &856966613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,7 +2304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613178923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 2, z: 1.26}
+  m_LocalPosition: {x: -6.77, y: 2, z: 0.26}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2420,7 +2426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686639411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 2, z: 3.26}
+  m_LocalPosition: {x: -6.77, y: 2, z: 3.26}
   m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2562,7 +2568,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915946704}
   m_LocalRotation: {x: -0, y: -0.38268277, z: -0, w: 0.92387986}
-  m_LocalPosition: {x: 8.98, y: 2, z: 0.26000023}
+  m_LocalPosition: {x: 2.4799995, y: 2, z: 10.26}
   m_LocalScale: {x: 1, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []

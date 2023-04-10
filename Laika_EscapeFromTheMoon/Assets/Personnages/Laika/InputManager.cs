@@ -7,16 +7,19 @@ public class InputManager : MonoBehaviour
 {
     public InputActionLEFTM _laikaControls;
     public LaikaAnimation _laikaAnimation;
+    public LaikaLocation _laikaLocation;
 
     public Vector2 _mouvementInput;
     public Vector2 _cameraInput;
 
 
-    private float _moveAmount;
+    public float _moveAmount;
     public float _verticalInput;
     public float _horizontalInput;
     public float _cameraInputX;
     public float _cameraInputY;
+
+    public bool _sprintInput;
 
 
 
@@ -25,8 +28,11 @@ public class InputManager : MonoBehaviour
         if(_laikaControls == null)
         {
             _laikaControls = new InputActionLEFTM();
-            _laikaControls.LaikaInput.Mouvements.performed += i => _mouvementInput = i.ReadValue<Vector2>();
-            _laikaControls.LaikaInput.Camera.performed += i => _cameraInput = i.ReadValue<Vector2>();
+            _laikaControls.LaikaMovements.Mouvements.performed += i => _mouvementInput = i.ReadValue<Vector2>();
+            _laikaControls.LaikaMovements.Camera.performed += i => _cameraInput = i.ReadValue<Vector2>();
+
+            _laikaControls.LaikaActions.SprintButton.performed += i => _sprintInput = true;
+            _laikaControls.LaikaActions.SprintButton.canceled += i => _sprintInput = false;
         }
 
         _laikaControls.Enable();
@@ -45,6 +51,7 @@ public class InputManager : MonoBehaviour
     public void HandleAllInputs()
     {
         HandleMovementsInput();
+        HandleSprintingInput();
     }
 
     private void HandleMovementsInput()
@@ -56,6 +63,12 @@ public class InputManager : MonoBehaviour
         _cameraInputY = _cameraInput.y;
 
         _moveAmount = Mathf.Clamp01(Mathf.Abs(_horizontalInput) + Mathf.Abs(_verticalInput));
-        _laikaAnimation.UpdateAnimatorValue( 0f, _moveAmount);
+        _laikaAnimation.UpdateAnimatorValue( 0f, _moveAmount, _laikaLocation._isSprinting);
+    }
+
+    private void HandleSprintingInput()
+    {
+        if (_sprintInput && _moveAmount > 0.5f) _laikaLocation._isSprinting = true;
+        else _laikaLocation._isSprinting = false;
     }
 }

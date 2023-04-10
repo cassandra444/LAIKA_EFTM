@@ -24,7 +24,7 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
     ""name"": ""InputActionLEFTM"",
     ""maps"": [
         {
-            ""name"": ""LaikaInput"",
+            ""name"": ""LaikaMovements"",
             ""id"": ""8d13e3ed-db4e-4ccc-ac09-108dd8dc77e3"",
             ""actions"": [
                 {
@@ -211,15 +211,57 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""LaikaActions"",
+            ""id"": ""7d7469b4-b2a3-4f42-b5f6-283bf7dddec9"",
+            ""actions"": [
+                {
+                    ""name"": ""SprintButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""c35a8c8e-4997-4df5-9da8-1c73d728836b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""216d1612-68f8-4f44-aae5-65f27917db96"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SprintButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2cd5e1c3-eb3b-4f3f-a537-f12594e4e46a"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SprintButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
 }");
-        // LaikaInput
-        m_LaikaInput = asset.FindActionMap("LaikaInput", throwIfNotFound: true);
-        m_LaikaInput_Mouvements = m_LaikaInput.FindAction("Mouvements", throwIfNotFound: true);
-        m_LaikaInput_Attaque = m_LaikaInput.FindAction("Attaque", throwIfNotFound: true);
-        m_LaikaInput_Camera = m_LaikaInput.FindAction("Camera", throwIfNotFound: true);
+        // LaikaMovements
+        m_LaikaMovements = asset.FindActionMap("LaikaMovements", throwIfNotFound: true);
+        m_LaikaMovements_Mouvements = m_LaikaMovements.FindAction("Mouvements", throwIfNotFound: true);
+        m_LaikaMovements_Attaque = m_LaikaMovements.FindAction("Attaque", throwIfNotFound: true);
+        m_LaikaMovements_Camera = m_LaikaMovements.FindAction("Camera", throwIfNotFound: true);
+        // LaikaActions
+        m_LaikaActions = asset.FindActionMap("LaikaActions", throwIfNotFound: true);
+        m_LaikaActions_SprintButton = m_LaikaActions.FindAction("SprintButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -276,39 +318,39 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // LaikaInput
-    private readonly InputActionMap m_LaikaInput;
-    private ILaikaInputActions m_LaikaInputActionsCallbackInterface;
-    private readonly InputAction m_LaikaInput_Mouvements;
-    private readonly InputAction m_LaikaInput_Attaque;
-    private readonly InputAction m_LaikaInput_Camera;
-    public struct LaikaInputActions
+    // LaikaMovements
+    private readonly InputActionMap m_LaikaMovements;
+    private ILaikaMovementsActions m_LaikaMovementsActionsCallbackInterface;
+    private readonly InputAction m_LaikaMovements_Mouvements;
+    private readonly InputAction m_LaikaMovements_Attaque;
+    private readonly InputAction m_LaikaMovements_Camera;
+    public struct LaikaMovementsActions
     {
         private @InputActionLEFTM m_Wrapper;
-        public LaikaInputActions(@InputActionLEFTM wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Mouvements => m_Wrapper.m_LaikaInput_Mouvements;
-        public InputAction @Attaque => m_Wrapper.m_LaikaInput_Attaque;
-        public InputAction @Camera => m_Wrapper.m_LaikaInput_Camera;
-        public InputActionMap Get() { return m_Wrapper.m_LaikaInput; }
+        public LaikaMovementsActions(@InputActionLEFTM wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Mouvements => m_Wrapper.m_LaikaMovements_Mouvements;
+        public InputAction @Attaque => m_Wrapper.m_LaikaMovements_Attaque;
+        public InputAction @Camera => m_Wrapper.m_LaikaMovements_Camera;
+        public InputActionMap Get() { return m_Wrapper.m_LaikaMovements; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(LaikaInputActions set) { return set.Get(); }
-        public void SetCallbacks(ILaikaInputActions instance)
+        public static implicit operator InputActionMap(LaikaMovementsActions set) { return set.Get(); }
+        public void SetCallbacks(ILaikaMovementsActions instance)
         {
-            if (m_Wrapper.m_LaikaInputActionsCallbackInterface != null)
+            if (m_Wrapper.m_LaikaMovementsActionsCallbackInterface != null)
             {
-                @Mouvements.started -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnMouvements;
-                @Mouvements.performed -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnMouvements;
-                @Mouvements.canceled -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnMouvements;
-                @Attaque.started -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
-                @Attaque.performed -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
-                @Attaque.canceled -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnAttaque;
-                @Camera.started -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
-                @Camera.performed -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
-                @Camera.canceled -= m_Wrapper.m_LaikaInputActionsCallbackInterface.OnCamera;
+                @Mouvements.started -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnMouvements;
+                @Mouvements.performed -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnMouvements;
+                @Mouvements.canceled -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnMouvements;
+                @Attaque.started -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnAttaque;
+                @Attaque.performed -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnAttaque;
+                @Attaque.canceled -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnAttaque;
+                @Camera.started -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnCamera;
+                @Camera.performed -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnCamera;
+                @Camera.canceled -= m_Wrapper.m_LaikaMovementsActionsCallbackInterface.OnCamera;
             }
-            m_Wrapper.m_LaikaInputActionsCallbackInterface = instance;
+            m_Wrapper.m_LaikaMovementsActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Mouvements.started += instance.OnMouvements;
@@ -323,11 +365,48 @@ public partial class @InputActionLEFTM : IInputActionCollection2, IDisposable
             }
         }
     }
-    public LaikaInputActions @LaikaInput => new LaikaInputActions(this);
-    public interface ILaikaInputActions
+    public LaikaMovementsActions @LaikaMovements => new LaikaMovementsActions(this);
+
+    // LaikaActions
+    private readonly InputActionMap m_LaikaActions;
+    private ILaikaActionsActions m_LaikaActionsActionsCallbackInterface;
+    private readonly InputAction m_LaikaActions_SprintButton;
+    public struct LaikaActionsActions
+    {
+        private @InputActionLEFTM m_Wrapper;
+        public LaikaActionsActions(@InputActionLEFTM wrapper) { m_Wrapper = wrapper; }
+        public InputAction @SprintButton => m_Wrapper.m_LaikaActions_SprintButton;
+        public InputActionMap Get() { return m_Wrapper.m_LaikaActions; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LaikaActionsActions set) { return set.Get(); }
+        public void SetCallbacks(ILaikaActionsActions instance)
+        {
+            if (m_Wrapper.m_LaikaActionsActionsCallbackInterface != null)
+            {
+                @SprintButton.started -= m_Wrapper.m_LaikaActionsActionsCallbackInterface.OnSprintButton;
+                @SprintButton.performed -= m_Wrapper.m_LaikaActionsActionsCallbackInterface.OnSprintButton;
+                @SprintButton.canceled -= m_Wrapper.m_LaikaActionsActionsCallbackInterface.OnSprintButton;
+            }
+            m_Wrapper.m_LaikaActionsActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @SprintButton.started += instance.OnSprintButton;
+                @SprintButton.performed += instance.OnSprintButton;
+                @SprintButton.canceled += instance.OnSprintButton;
+            }
+        }
+    }
+    public LaikaActionsActions @LaikaActions => new LaikaActionsActions(this);
+    public interface ILaikaMovementsActions
     {
         void OnMouvements(InputAction.CallbackContext context);
         void OnAttaque(InputAction.CallbackContext context);
         void OnCamera(InputAction.CallbackContext context);
+    }
+    public interface ILaikaActionsActions
+    {
+        void OnSprintButton(InputAction.CallbackContext context);
     }
 }

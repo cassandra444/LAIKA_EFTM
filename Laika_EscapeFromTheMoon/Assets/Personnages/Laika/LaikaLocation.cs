@@ -10,7 +10,12 @@ public class LaikaLocation : MonoBehaviour
     public Transform _cameraObject;
     public Rigidbody _laikaRigidbody;
 
-    public float _movementSpeed = 7f;
+    public bool _isSprinting;
+
+    [Header("Movements Speed")]
+    public float _walkingSpeed = 1.5f;
+    public float _sprintingSpeed = 7f;
+    public float _runningSpeed = 5f;
     public float _rotationSpeed = 15f;
 
     void Awake()
@@ -32,7 +37,19 @@ public class LaikaLocation : MonoBehaviour
         _moveDirection = _moveDirection + _cameraObject.right * _inputManager._horizontalInput;
         _moveDirection.Normalize();
         _moveDirection.y = 0f;
-        _moveDirection = _moveDirection * _movementSpeed;
+        //_moveDirection = _moveDirection * _movementSpeed;
+
+        if (_isSprinting)
+        {
+            _moveDirection = _moveDirection * _sprintingSpeed;
+        }
+        else
+        {
+            if (_inputManager._moveAmount >= 0.5f) _moveDirection = _moveDirection * _runningSpeed;
+            else _moveDirection = _moveDirection * _walkingSpeed;
+        }
+
+       
 
         Vector3 _movementVelocity = _moveDirection;
         _laikaRigidbody.velocity = _movementVelocity;
