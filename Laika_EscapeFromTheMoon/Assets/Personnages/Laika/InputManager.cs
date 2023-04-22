@@ -20,6 +20,7 @@ public class InputManager : MonoBehaviour
     public float _cameraInputY;
 
     public bool _sprintInput;
+    public bool _attackInput;
 
 
 
@@ -33,6 +34,10 @@ public class InputManager : MonoBehaviour
 
             _laikaControls.LaikaActions.SprintButton.performed += i => _sprintInput = true;
             _laikaControls.LaikaActions.SprintButton.canceled += i => _sprintInput = false;
+
+            _laikaControls.LaikaActions.AttackButton.performed += i => _attackInput = true;
+            //_laikaControls.LaikaActions.AttackButton.canceled += i => _attackInput = false;
+
         }
 
         _laikaControls.Enable();
@@ -52,6 +57,7 @@ public class InputManager : MonoBehaviour
     {
         HandleMovementsInput();
         HandleSprintingInput();
+        HandleAttackInput();
     }
 
     private void HandleMovementsInput()
@@ -71,4 +77,13 @@ public class InputManager : MonoBehaviour
         if (_sprintInput && _moveAmount > 0.5f) _laikaLocation._isSprinting = true;
         else _laikaLocation._isSprinting = false;
     }
+
+   
+
+    private void HandleAttackInput()
+    {
+        if(_attackInput) _laikaLocation._isAttacking = true; 
+        else _laikaLocation._isAttacking = false;
+    }
+
 }

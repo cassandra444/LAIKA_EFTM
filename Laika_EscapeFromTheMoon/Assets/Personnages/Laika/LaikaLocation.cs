@@ -4,30 +4,43 @@ using UnityEngine;
 
 public class LaikaLocation : MonoBehaviour
 {
-    InputManager _inputManager;
 
+#region Variables
+    InputManager _inputManager;
+    LaikaManager _laikaManager;
+
+    [Header("References")]
     private Vector3 _moveDirection;
     public Transform _cameraObject;
     public Rigidbody _laikaRigidbody;
 
+    [Header("Movements Parameters")]
     public bool _isSprinting;
-
-    [Header("Movements Speed")]
     public float _walkingSpeed = 1.5f;
     public float _sprintingSpeed = 7f;
     public float _runningSpeed = 5f;
     public float _rotationSpeed = 15f;
+    
+
+    [Header("Attack Parameters")]
+    public bool _isAttacking;
+    public bool _attckCoolDown;
+    public float _AttackCoolDown = 5f;
+#endregion
 
     void Awake()
     {
         _inputManager = GetComponent<InputManager>();
+        _laikaManager = GetComponent<LaikaManager>();
         _cameraObject = Camera.main.transform;
     }
 
+#region Fonctions de déplacements
     public void HandleAllMovements()
     {
         HandleMovements();
         HandleRotation();
+        HandleAttack();
     }
 
     private void HandleMovements()
@@ -71,4 +84,30 @@ public class LaikaLocation : MonoBehaviour
 
         transform.rotation = _laikaRotation;
     }
+#endregion
+
+#region Fonction d'attaque
+    private IEnumerator AttackCoolDown()
+    {
+        _attckCoolDown = true;
+        yield return new WaitForSeconds(_AttackCoolDown);
+        _attckCoolDown = false;
+    }
+
+    private void HandleAttack()
+    {
+        if (_laikaManager._laikaCanFreeze)
+        {
+            if (_isAttacking && _attckCoolDown == false)
+            {
+                Debug.Log("Laika Attack");
+                StartCoroutine("AttackCoolDown");
+            }
+                
+        }
+        
+    }
+
+#endregion
+
 }
