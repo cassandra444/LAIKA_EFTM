@@ -24,6 +24,7 @@ public class InputManager : MonoBehaviour
 
 
 
+
     private void OnEnable()
     {
         if(_laikaControls == null)
@@ -36,7 +37,7 @@ public class InputManager : MonoBehaviour
             _laikaControls.LaikaActions.SprintButton.canceled += i => _sprintInput = false;
 
             _laikaControls.LaikaActions.AttackButton.performed += i => _attackInput = true;
-            //_laikaControls.LaikaActions.AttackButton.canceled += i => _attackInput = false;
+            _laikaControls.LaikaActions.AttackButton.canceled += i => _attackInput = false;
 
         }
 

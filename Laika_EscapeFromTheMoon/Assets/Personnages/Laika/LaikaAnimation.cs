@@ -43,4 +43,9 @@ public class LaikaAnimation : MonoBehaviour
         _laikaAnimator.SetFloat(horizontal, snappedHorizontal, 0.1f,Time.deltaTime);
         _laikaAnimator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);
     }
+
+    public void PlayInteractAnim() 
+    {
+        _laikaAnimator.SetBool("IsInteracting", false);
+    }
 }

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: c5dd9801e290bf641a9820ff714d203a, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -652,6 +652,99 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426908757}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &459409606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 459409609}
+  - component: {fileID: 459409608}
+  - component: {fileID: 459409607}
+  m_Layer: 0
+  m_Name: LaikaStateMachine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &459409607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459409606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d8ac5745426c249945fcd697ea54c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouvementInput: {x: 0, y: 0}
+  _cameraInput: {x: 0, y: 0}
+  _moveAmount: 0
+  _verticalInput: 0
+  _horizontalInput: 0
+  _sprintInput: 0
+  _interactInput: 0
+  _cameraInputX: 0
+  _cameraInputY: 0
+  _moveDirection: {x: 0, y: 0, z: 0}
+  _cameraObject: {fileID: 0}
+  _laikaRigidbody: {fileID: 0}
+  _laikaTransform: {fileID: 0}
+  _walkingSpeed: 1.5
+  _sprintingSpeed: 7
+  _runningSpeed: 5
+  _rotationSpeed: 15
+  _laikaAnimator: {fileID: 0}
+--- !u!114 &459409608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459409606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52dd4898c6c6af24981e206ac30d2462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouvementInput: {x: 0, y: 0}
+  _cameraInput: {x: 0, y: 0}
+  _moveAmount: 0
+  _verticalInput: 0
+  _horizontalInput: 0
+  _sprintInput: 0
+  _interactInput: 0
+  _cameraInputX: 0
+  _cameraInputY: 0
+  _moveDirection: {x: 0, y: 0, z: 0}
+  _cameraObject: {fileID: 0}
+  _laikaRigidbody: {fileID: 0}
+  _laikaTransform: {fileID: 0}
+  _walkingSpeed: 1.5
+  _sprintingSpeed: 7
+  _runningSpeed: 5
+  _rotationSpeed: 15
+  _laikaAnimator: {fileID: 0}
+--- !u!4 &459409609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459409606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.07659227, y: 0.7581104, z: 0.029050477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &470583326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1944450615713381584, guid: 075a3b70072dda34a9bac4a08bec927d, type: 3}
@@ -713,7 +806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &607382889
 Transform:
   m_ObjectHideFlags: 0
@@ -3067,6 +3160,7 @@ GameObject:
   - component: {fileID: 1260638755}
   - component: {fileID: 1260638754}
   - component: {fileID: 1260638753}
+  - component: {fileID: 1260638756}
   m_Layer: 3
   m_Name: Laika_2
   m_TagString: Laika
@@ -3120,6 +3214,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1260638756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260638748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d8ac5745426c249945fcd697ea54c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mouvementInput: {x: 0, y: 0}
+  _cameraInput: {x: 0, y: 0}
+  _moveAmount: 0
+  _verticalInput: 0
+  _horizontalInput: 0
+  _sprintInput: 0
+  _interactInput: 0
+  _cameraInputX: 0
+  _cameraInputY: 0
+  _moveDirection: {x: 0, y: 0, z: 0}
+  _cameraObject: {fileID: 607382889}
+  _laikaRigidbody: {fileID: 1260638754}
+  _laikaTransform: {fileID: 1260638755}
+  _walkingSpeed: 1.5
+  _sprintingSpeed: 7
+  _runningSpeed: 5
+  _rotationSpeed: 15
+  _laikaAnimator: {fileID: 1046890175}
 --- !u!4 &1265940965 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1402168759797852126, guid: 075a3b70072dda34a9bac4a08bec927d, type: 3}
@@ -3180,6 +3304,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -278281521081639567, guid: 075a3b70072dda34a9bac4a08bec927d, type: 3}
   m_PrefabInstance: {fileID: 1152763813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476401308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476401311}
+  - component: {fileID: 1476401310}
+  - component: {fileID: 1476401309}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1476401309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476401308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1476401310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476401308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1476401311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476401308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1501021457 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5185797537628013511, guid: 075a3b70072dda34a9bac4a08bec927d, type: 3}
