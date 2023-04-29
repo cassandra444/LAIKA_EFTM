@@ -14,6 +14,8 @@ public class LaikaSprint : LaikaBaseState
     public override void UpdateLogic()
     {
         base.UpdateLogic();
+        laikaStateMachine.HandleMovements(laikaStateMachine._sprintingSpeed);
+        laikaStateMachine.HandleRotation();
         laikaStateMachine.UpdateSprintAnimatorValue(2f, 2f, true);
 
 
@@ -22,7 +24,7 @@ public class LaikaSprint : LaikaBaseState
             laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaWalk);
         }
 
-        if (laikaStateMachine._interactInput == true)
+        if (laikaStateMachine._interactInput == true && laikaStateMachine.InteractionTarget != null)
         {
             laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaInteract);
 

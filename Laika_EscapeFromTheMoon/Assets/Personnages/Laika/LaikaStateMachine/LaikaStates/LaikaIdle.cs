@@ -24,7 +24,7 @@ public class LaikaIdle : LaikaBaseState
 
         }
 
-        if (laikaStateMachine._interactInput == true)
+        if (laikaStateMachine._interactInput == true && laikaStateMachine.InteractionTarget != null)
         {
             laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaInteract);
 

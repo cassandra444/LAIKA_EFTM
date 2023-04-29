@@ -6,25 +6,38 @@ public class LaikaInteract : LaikaBaseState
 {
     public LaikaInteract(LaikaMovementsSM laikaStateMachine) : base("LaikaInteract", laikaStateMachine) { }
 
+    public float timeRemaining;
+
     public override void Enter()
     {
         base.Enter();
+        // definir time rémaping comme égal à Intéractionduration de laikaStateMachine
+        timeRemaining = laikaStateMachine.InteractionDuration;
+
+        // jouer L'animation d'interaction
+        laikaStateMachine.PlayInteractAnim();
+
+         // Pour l'instant, nique la physique.
+         laikaStateMachine._laikaTransform.position = laikaStateMachine.InteractionTarget.position;
+       
+
+
     }
 
+   
     public override void UpdateLogic()
     {
         base.UpdateLogic();
-        laikaStateMachine.PlayInteractAnim();
 
-        if (laikaStateMachine._interactInput == false)
+        //Si le temps qu'il reste est supérieur à zéro, lui soustraire le temps qui passe
+        if (timeRemaining > 0)
         {
-            laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaIdle);
-
+            timeRemaining -= Time.deltaTime;
         }
-
-        /*if (laikaStateMachine._sprintInput == false)
+        //Si le temps qu'il reste est inférieur ou égal à zéro, sortir de cette state
+        else if (timeRemaining <= 0)
         {
             laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaIdle);
-        }*/
+        }
     }
 }

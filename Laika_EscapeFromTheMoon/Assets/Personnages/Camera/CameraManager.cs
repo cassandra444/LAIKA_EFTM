@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    public InputManager _inputManager;
+    public LaikaStateMachine _inputManager;
     public Transform _targetTransform;
     public Transform _cameraPivot;
     private float _defaultPosition;
