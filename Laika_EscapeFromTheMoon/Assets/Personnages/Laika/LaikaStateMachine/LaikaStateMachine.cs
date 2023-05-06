@@ -167,6 +167,7 @@ public class LaikaStateMachine : MonoBehaviour
 
         //faire bouger Laika selon la direction et la vitesse
         _laikaRigidbody.velocity = _movementVelocity;
+        
     }
 
     public void HandleRotation()

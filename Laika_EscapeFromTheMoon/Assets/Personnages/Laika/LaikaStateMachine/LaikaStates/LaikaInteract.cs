@@ -17,27 +17,37 @@ public class LaikaInteract : LaikaBaseState
         // jouer L'animation d'interaction
         laikaStateMachine.PlayInteractAnim();
 
-         // Pour l'instant, nique la physique.
-         laikaStateMachine._laikaTransform.position = laikaStateMachine.InteractionTarget.position;
+        
        
 
 
     }
 
-   
-    public override void UpdateLogic()
-    {
-        base.UpdateLogic();
 
-        //Si le temps qu'il reste est supérieur à zéro, lui soustraire le temps qui passe
-        if (timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-        }
-        //Si le temps qu'il reste est inférieur ou égal à zéro, sortir de cette state
-        else if (timeRemaining <= 0)
-        {
-            laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaIdle);
-        }
+public override void UpdatePhysics()
+{
+    base.UpdatePhysics();
+
+        Vector3 _direction = Vector3.Lerp(laikaStateMachine._laikaTransform.position, laikaStateMachine.InteractionTarget.position, 1f);
+        laikaStateMachine._laikaRigidbody.MovePosition(_direction);
+        //laikaStateMachine._laikaRigidbody.velocity = _direction;
+
     }
+
+
+public override void UpdateLogic()
+{
+    base.UpdateLogic();
+
+    //Si le temps qu'il reste est supérieur à zéro, lui soustraire le temps qui passe
+    if (timeRemaining > 0)
+    {
+        timeRemaining -= Time.deltaTime;
+    }
+    //Si le temps qu'il reste est inférieur ou égal à zéro, sortir de cette state
+    else if (timeRemaining <= 0)
+    {
+        laikaStateMachine.ChangeState(((LaikaMovementsSM)laikaStateMachine).laikaIdle);
+    }
+}
 }
