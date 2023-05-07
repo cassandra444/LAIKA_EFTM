@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 
 public class LaikaStateMachine : MonoBehaviour
 {
     #region State Machine
-    LaikaBaseState currentState;
+    public LaikaBaseState currentState;
     public InputActionLEFTM _laikaControls;
+    [SerializeField] TextMeshProUGUI _stateText;
     public CameraManager _cameraManager;
 
     void Start()
@@ -22,6 +24,8 @@ public class LaikaStateMachine : MonoBehaviour
 
     void Update()
     {
+        _stateText.text = currentState.name;
+
         if (currentState != null)
             currentState.UpdateLogic();
 
@@ -52,16 +56,6 @@ public class LaikaStateMachine : MonoBehaviour
         currentState.Enter();
     }
 
-    // Affiche la current State
-    private void OnGUI()
-    {
-
-        GUILayout.BeginArea(new Rect(10f, 10f, 200f, 100f));
-        string content = currentState != null ? currentState.name : "(no current state)";
-        GUILayout.Label($"<color='black'><size=40>{content}</size></color>");
-        GUILayout.EndArea();
-
-    }
     #endregion
 
     #region Gestion Input
