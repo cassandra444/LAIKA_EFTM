@@ -379,6 +379,8 @@
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemisBaseState.cs"
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemisMovementSM.cs"
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemisStateMachine.cs"
+"Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemiStates/EnemiAttack.cs"
+"Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemiStates/EnemiDetect.cs"
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemiStates/EnemiFreeze.cs"
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemiStates/EnemiPatroll.cs"
 "Assets/Personnages/Ennemis/EnnemiStateMachine/EnnemiStates/EnemiWork.cs"

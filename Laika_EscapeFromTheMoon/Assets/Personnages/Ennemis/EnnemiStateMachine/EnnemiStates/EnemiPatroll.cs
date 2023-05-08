@@ -9,11 +9,18 @@ public class EnemiPatroll : EnnemisBaseState
     public override void Enter()
     {
         base.Enter();
+        //UI State
+        ennemisStateMachine.DetectionStateIndicatorImage[0].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[1].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[2].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[3].color = ennemisStateMachine.Blue;
 
         //Animations
         ennemisStateMachine.EnnemiAnimator.SetBool("Walk", true);
         ennemisStateMachine.EnnemiAnimator.SetBool("Work", false);
         ennemisStateMachine.EnnemiAnimator.SetBool("Freeze", false);
+        ennemisStateMachine.EnnemiAnimator.SetBool("Detect", false);
+        ennemisStateMachine.EnnemiAnimator.SetBool("Attack", false);
 
         //Passer au point suivant dans le tableau de points
         ennemisStateMachine.CurrentWaypointIndex = (ennemisStateMachine.CurrentWaypointIndex + 1) % ennemisStateMachine.EnnemiPatrollPointArr.Length;
@@ -49,5 +56,7 @@ public class EnemiPatroll : EnnemisBaseState
         }
 
         if (ennemisStateMachine.EnnemiIsFreezed == true) ennemisStateMachine.ChangeState(((EnnemisMovementSM)ennemisStateMachine).enemiFreeze);
+
+        if (ennemisStateMachine.LaikaInDetectionRange) ennemisStateMachine.ChangeState(((EnnemisMovementSM)ennemisStateMachine).enemiDetect);
     }
 }

@@ -11,6 +11,12 @@ public class EnemiFreeze : EnnemisBaseState
     public override void Enter()
     {
         base.Enter();
+        //UI State
+        ennemisStateMachine.DetectionStateIndicatorImage[0].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[1].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[2].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[3].color = ennemisStateMachine.Blue;
+
         // definir time rémaping comme égal à Intéractionduration de laikaStateMachine
         timeRemaining = ennemisStateMachine.FreezeDuration;
 
@@ -18,7 +24,8 @@ public class EnemiFreeze : EnnemisBaseState
         ennemisStateMachine.EnnemiAnimator.SetBool("Walk", false);
         ennemisStateMachine.EnnemiAnimator.SetBool("Work", false);
         ennemisStateMachine.EnnemiAnimator.SetBool("Freeze", true);
-        
+        ennemisStateMachine.EnnemiAnimator.SetBool("Detect", false);
+
 
     }
 

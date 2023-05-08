@@ -12,6 +12,12 @@ public class EnemiWork : EnnemisBaseState
     {
         base.Enter();
 
+        //UI State
+        ennemisStateMachine.DetectionStateIndicatorImage[0].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[1].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[2].color = ennemisStateMachine.Blue;
+        ennemisStateMachine.DetectionStateIndicatorImage[3].color = ennemisStateMachine.Blue;
+
         //Definir la durée du timeur avant le changement de stte vers patrouille selon la valeur donnée dans EnnemisStateMachine
         timeRemaining = ennemisStateMachine.WorkDuration;
 
@@ -19,6 +25,7 @@ public class EnemiWork : EnnemisBaseState
         ennemisStateMachine.EnnemiAnimator.SetBool("Walk", false);
         ennemisStateMachine.EnnemiAnimator.SetBool("Work", true);
         ennemisStateMachine.EnnemiAnimator.SetBool("Freeze", false);
+        ennemisStateMachine.EnnemiAnimator.SetBool("Detect", false);
     }
 
     public override void UpdateLogic()
@@ -37,5 +44,7 @@ public class EnemiWork : EnnemisBaseState
         }
 
         if(ennemisStateMachine.EnnemiIsFreezed == true) ennemisStateMachine.ChangeState(((EnnemisMovementSM)ennemisStateMachine).enemiFreeze);
+
+        if (ennemisStateMachine.LaikaInDetectionRange) ennemisStateMachine.ChangeState(((EnnemisMovementSM)ennemisStateMachine).enemiDetect);
     }
 }

@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: 465}
-  m_SizeDelta: {x: 1920, y: -930}
+  m_AnchoredPosition: {x: 960, y: 510.52637}
+  m_SizeDelta: {x: 1920, y: -1021.0527}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136126080
 MonoBehaviour:
@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -465}
-  m_SizeDelta: {x: 1920, y: -930}
+  m_AnchoredPosition: {x: 960, y: -514.99744}
+  m_SizeDelta: {x: 1920, y: -1029.9949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172685712
 MonoBehaviour:
@@ -2134,8 +2134,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: 0}
-  m_SizeDelta: {x: 150, y: 0.000012397766}
+  m_AnchoredPosition: {x: 25.002625, y: 0}
+  m_SizeDelta: {x: 50.0051, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203548642
 MonoBehaviour:
@@ -2549,7 +2549,7 @@ MonoBehaviour:
   - {fileID: 932004921}
   - {fileID: 1542034121}
   CurrentWaypointIndex: 0
-  PatrollSpeed: 0.01
+  PatrollSpeed: 3
   FreezeDuration: 10
   freezeRangeChecker: {fileID: 1228707924}
   laikaStateMachine: {fileID: 1260638756}
@@ -2562,6 +2562,9 @@ MonoBehaviour:
   RayCastEndPoint: 15
   RaycastDiameter: 4
   LaikaInDetectionRange: 0
+  DetecDuration: 5
+  LaikaPoint: {x: 0, y: 0, z: 0}
+  AttackDuration: 4
   DetectionStateIndicatorImage:
   - {fileID: 172685712}
   - {fileID: 1203548642}
@@ -3645,8 +3648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1845, y: 0}
-  m_SizeDelta: {x: 150, y: 0.000012397766}
+  m_AnchoredPosition: {x: 1898.444, y: 0}
+  m_SizeDelta: {x: 43.1121, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810631113
 MonoBehaviour:

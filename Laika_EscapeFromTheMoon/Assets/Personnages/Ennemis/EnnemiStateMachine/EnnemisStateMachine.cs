@@ -106,6 +106,9 @@ public class EnnemisStateMachine : MonoBehaviour
     //public Vector3 SpereCastEndPos;
 
     public bool LaikaInDetectionRange;
+    public float DetecDuration;
+    public Vector3 LaikaPoint;
+    public float AttackDuration;
 
     public Image[] DetectionStateIndicatorImage;
     public Color Yellow;
@@ -117,7 +120,7 @@ public class EnnemisStateMachine : MonoBehaviour
     public void FixedUpdate()
     {
 
-        #region Test 17 Raycast
+        #region  Raycasts creation
         RaycastHit hit;
 
         var Ray0 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
@@ -171,9 +174,11 @@ public class EnnemisStateMachine : MonoBehaviour
         var Ray16 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, -0.34f * RaycastDiameter, RayCastEndPoint));
         Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, -0.34f * RaycastDiameter, RayCastEndPoint) , Color.red);
 
+        #endregion
 
 
-
+        // Si l'un des raycast collider avec Laika  (un gameObject du layer laika)
+        //ALORS Le bool de detection de laika dans la zone renvoie true ET Le V3 LaikaPOint est égal au transform du collider detecté
         if (Physics.Raycast(Ray1, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray2, out hit, RaycastDistance, LaikaLayerMask) ||
             Physics.Raycast(Ray3, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray4, out hit, RaycastDistance, LaikaLayerMask) ||
             Physics.Raycast(Ray5, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray6, out hit, RaycastDistance, LaikaLayerMask) ||
@@ -184,53 +189,12 @@ public class EnnemisStateMachine : MonoBehaviour
             Physics.Raycast(Ray15, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray16, out hit, RaycastDistance, LaikaLayerMask) ||
             Physics.Raycast(Ray0, out hit, RaycastDistance, LaikaLayerMask))
         {
-            DetectionStateIndicatorImage[0].color = Yellow;
-            DetectionStateIndicatorImage[1].color = Yellow;
-            DetectionStateIndicatorImage[2].color = Yellow;
-            DetectionStateIndicatorImage[3].color = Yellow;
+            
             LaikaInDetectionRange = true;
+            LaikaPoint = hit.collider.transform.position;
         }
-        else
-        {
-            DetectionStateIndicatorImage[0].color = Blue;
-            DetectionStateIndicatorImage[1].color = Blue;
-            DetectionStateIndicatorImage[2].color = Blue;
-            DetectionStateIndicatorImage[3].color = Blue;
-            LaikaInDetectionRange = false;
-        }
-        #endregion
-
-        #region CheckSphere
-
-        
-        /*SpereCastEndPos = EnnemiHeadTransform.TransformDirection(0f , 0f , SpereCastEnd);
-        Debug.DrawRay(EnnemiHeadTransform.position, SpereCastEndPos, Color.red);
-        
-
-
-
-        //Debug.DrawLine(new Vector3(EnnemiHeadTransform.position.x + SphereCastRadius / 2, EnnemiHeadTransform.position.y, EnnemiHeadTransform.position.z + SphereCastRadius / 2),
-        //new Vector3(SpereCastEndPos.x + SphereCastRadius / 2, SpereCastEndPos.y, SpereCastEndPos.z + SphereCastRadius / 2), 
-        //Color.red);
-
-        /*if (Physics.CheckCapsule(EnnemiHeadTransform.position, SpereCastEndPos, SphereCastRadius, LaikaLayerMask))*/
-        /*if(Physics.CheckBox(EnnemiHeadTransform.position, new Vector3(SphereCastRadius / 2, SphereCastRadius / 2, SpereCastEnd / 2), EnnemiHeadTransform.rotation, LaikaLayerMask))
-        {
-            DetectionStateIndicatorImage[0].color = Yellow;
-            DetectionStateIndicatorImage[1].color = Yellow;
-            DetectionStateIndicatorImage[2].color = Yellow;
-            DetectionStateIndicatorImage[3].color = Yellow;
-            LaikaInDetectionRange = true;
-        }else
-        {
-            DetectionStateIndicatorImage[0].color = Blue;
-            DetectionStateIndicatorImage[1].color = Blue;
-            DetectionStateIndicatorImage[2].color = Blue;
-            DetectionStateIndicatorImage[3].color = Blue;
-            LaikaInDetectionRange = false;
-        }*/
-
-        #endregion
+        //SINON Le bool de detection de laika dans la zone renvoie false
+        else LaikaInDetectionRange = false;
 
     }
 
