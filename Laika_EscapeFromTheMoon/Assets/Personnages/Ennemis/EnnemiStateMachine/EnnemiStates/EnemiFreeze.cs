@@ -26,8 +26,6 @@ public class EnemiFreeze : EnnemisBaseState
     {
         base.UpdateLogic();
 
-        //Debug.Log("Im Freezing");
-
         //Si le temps qu'il reste est supérieur à zéro, lui soustraire le temps qui passe
         if (timeRemaining > 0)
         {

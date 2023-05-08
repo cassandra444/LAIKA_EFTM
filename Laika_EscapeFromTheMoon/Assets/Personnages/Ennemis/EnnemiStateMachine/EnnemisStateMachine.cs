@@ -21,6 +21,8 @@ public class EnnemisStateMachine : MonoBehaviour
         if (currentState != null)
             currentState.Enter();
 
+        
+
     }
 
     void Update()
@@ -87,4 +89,152 @@ public class EnnemisStateMachine : MonoBehaviour
     public bool EnnemiIsFreezed;
 
     #endregion
+
+    #region Detection
+    [Header("Detection")]
+    public LayerMask LaikaLayerMask; 
+    public Transform EnnemiHeadTransform;
+
+    //Test 17 Raycasts
+    public float RaycastDistance;
+    public float RayCastEndPoint;
+    public float RaycastDiameter;
+
+    //Test SphereCast
+    //public float SphereCastRadius;
+    //public float SpereCastEnd;
+    //public Vector3 SpereCastEndPos;
+
+    public bool LaikaInDetectionRange;
+
+    public Image[] DetectionStateIndicatorImage;
+    public Color Yellow;
+    public Color Red;
+    public Color Blue;
+
+
+
+    public void FixedUpdate()
+    {
+
+        #region Test 17 Raycast
+        RaycastHit hit;
+
+        var Ray0 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray1 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 1f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 1f * RaycastDiameter, RayCastEndPoint), Color.red);
+
+        var Ray2 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, -1f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, -1f * RaycastDiameter, RayCastEndPoint), Color.red);
+
+        var Ray3 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(1f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(1f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray4 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-1f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-1f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray5 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.7f * RaycastDiameter, 0.7f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.7f * RaycastDiameter, 0.7f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray6 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.7f * RaycastDiameter, -0.7f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.7f * RaycastDiameter, -0.7f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray7 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.7f * RaycastDiameter, -0.7f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.7f * RaycastDiameter, -0.7f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray8 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.7f * RaycastDiameter, 0.7f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.7f * RaycastDiameter, 0.7f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray9 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 0.5f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, 0.5f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray10 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, -0.5f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0f * RaycastDiameter, -0.5f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray11 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.5f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.5f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray12 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.5f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.5f * RaycastDiameter, 0f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray13 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.34f * RaycastDiameter, -0.34f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.34f * RaycastDiameter, -0.34f, RayCastEndPoint), Color.red);
+
+        var Ray14 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.34f * RaycastDiameter, 0.34f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(0.34f * RaycastDiameter, 0.34f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray15 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, 0.34f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, 0.34f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+        var Ray16 = new Ray(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, -0.34f * RaycastDiameter, RayCastEndPoint));
+        Debug.DrawRay(EnnemiHeadTransform.position, EnnemiHeadTransform.TransformDirection(-0.34f * RaycastDiameter, -0.34f * RaycastDiameter, RayCastEndPoint) , Color.red);
+
+
+
+
+        if (Physics.Raycast(Ray1, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray2, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray3, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray4, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray5, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray6, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray7, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray8, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray9, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray10, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray11, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray12, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray13, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray14, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray15, out hit, RaycastDistance, LaikaLayerMask) || Physics.Raycast(Ray16, out hit, RaycastDistance, LaikaLayerMask) ||
+            Physics.Raycast(Ray0, out hit, RaycastDistance, LaikaLayerMask))
+        {
+            DetectionStateIndicatorImage[0].color = Yellow;
+            DetectionStateIndicatorImage[1].color = Yellow;
+            DetectionStateIndicatorImage[2].color = Yellow;
+            DetectionStateIndicatorImage[3].color = Yellow;
+            LaikaInDetectionRange = true;
+        }
+        else
+        {
+            DetectionStateIndicatorImage[0].color = Blue;
+            DetectionStateIndicatorImage[1].color = Blue;
+            DetectionStateIndicatorImage[2].color = Blue;
+            DetectionStateIndicatorImage[3].color = Blue;
+            LaikaInDetectionRange = false;
+        }
+        #endregion
+
+        #region CheckSphere
+
+        
+        /*SpereCastEndPos = EnnemiHeadTransform.TransformDirection(0f , 0f , SpereCastEnd);
+        Debug.DrawRay(EnnemiHeadTransform.position, SpereCastEndPos, Color.red);
+        
+
+
+
+        //Debug.DrawLine(new Vector3(EnnemiHeadTransform.position.x + SphereCastRadius / 2, EnnemiHeadTransform.position.y, EnnemiHeadTransform.position.z + SphereCastRadius / 2),
+        //new Vector3(SpereCastEndPos.x + SphereCastRadius / 2, SpereCastEndPos.y, SpereCastEndPos.z + SphereCastRadius / 2), 
+        //Color.red);
+
+        /*if (Physics.CheckCapsule(EnnemiHeadTransform.position, SpereCastEndPos, SphereCastRadius, LaikaLayerMask))*/
+        /*if(Physics.CheckBox(EnnemiHeadTransform.position, new Vector3(SphereCastRadius / 2, SphereCastRadius / 2, SpereCastEnd / 2), EnnemiHeadTransform.rotation, LaikaLayerMask))
+        {
+            DetectionStateIndicatorImage[0].color = Yellow;
+            DetectionStateIndicatorImage[1].color = Yellow;
+            DetectionStateIndicatorImage[2].color = Yellow;
+            DetectionStateIndicatorImage[3].color = Yellow;
+            LaikaInDetectionRange = true;
+        }else
+        {
+            DetectionStateIndicatorImage[0].color = Blue;
+            DetectionStateIndicatorImage[1].color = Blue;
+            DetectionStateIndicatorImage[2].color = Blue;
+            DetectionStateIndicatorImage[3].color = Blue;
+            LaikaInDetectionRange = false;
+        }*/
+
+        #endregion
+
+    }
+
+    #endregion
+
+ 
 }
