@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Laika_Mouvements.unity
+    guid: cd1136bc434a20946932311f285c72a5
   m_configObjects: {}

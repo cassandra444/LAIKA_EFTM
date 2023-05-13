@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Laika
   - InteractionTarget
+  - GameMaster
+  - Ennemi
   layers:
   - Default
   - TransparentFX
