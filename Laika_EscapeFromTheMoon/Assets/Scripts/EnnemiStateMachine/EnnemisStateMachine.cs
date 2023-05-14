@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Animations.Rigging;
 
 public class EnnemisStateMachine : MonoBehaviour
 {
@@ -13,6 +14,15 @@ public class EnnemisStateMachine : MonoBehaviour
     [Header("State Machine")]
     public TextMeshProUGUI _stateText;
 
+    [Header("Emissive Color")]
+    public Color EmissiveBlue;
+    public Color EmissiveYellow;
+    public Color EmissiveRed;
+    public Renderer EnnemiRend;
+
+    public Rig EnnemiRig;
+
+
 
     void Start()
     {
@@ -20,8 +30,6 @@ public class EnnemisStateMachine : MonoBehaviour
         currentState = GetInitialState();
         if (currentState != null)
             currentState.Enter();
-
-        
 
     }
 

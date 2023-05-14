@@ -26,6 +26,12 @@ public class EnemiFreeze : EnnemisBaseState
         ennemisStateMachine.EnnemiAnimator.SetBool("Freeze", true);
         ennemisStateMachine.EnnemiAnimator.SetBool("Detect", false);
 
+        //Emissive Color
+        ennemisStateMachine.EnnemiRend.material.SetColor("_EmissiveColor", ennemisStateMachine.EmissiveBlue);
+
+        //Rig
+        ennemisStateMachine.EnnemiRig.weight = 0f;
+
 
     }
 

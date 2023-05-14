@@ -26,6 +26,12 @@ public class EnemiWork : EnnemisBaseState
         ennemisStateMachine.EnnemiAnimator.SetBool("Work", true);
         ennemisStateMachine.EnnemiAnimator.SetBool("Freeze", false);
         ennemisStateMachine.EnnemiAnimator.SetBool("Detect", false);
+
+        //Emissive Color
+        ennemisStateMachine.EnnemiRend.material.SetColor("_EmissiveColor", ennemisStateMachine.EmissiveBlue);
+
+        //Rig
+        ennemisStateMachine.EnnemiRig.weight = 0f;
     }
 
     public override void UpdateLogic()

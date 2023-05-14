@@ -7,6 +7,7 @@ public class LaikaSpawn : MonoBehaviour
 {
     private GameMaster gameMaster;
     private EnnemisStateMachine ennemisStateMachine;
+    public float TimeBeforeRestart;
 
     void Start()
     {
@@ -16,16 +17,20 @@ public class LaikaSpawn : MonoBehaviour
         transform.position = gameMaster.LastCheckPointPos;
     }
 
+   
+
+    public IEnumerator WaitToReStart()
+    {
+        yield return new WaitForSeconds(TimeBeforeRestart);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     void Update()
     {
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }*/
 
         if(ennemisStateMachine.currentState.name == "EnemiAttack")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            StartCoroutine(WaitToReStart());
         }
         
     }

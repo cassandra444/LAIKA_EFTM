@@ -26,6 +26,12 @@ public class EnemiAttack : EnnemisBaseState
         ennemisStateMachine.DetectionStateIndicatorImage[1].color = ennemisStateMachine.Red;
         ennemisStateMachine.DetectionStateIndicatorImage[2].color = ennemisStateMachine.Red;
         ennemisStateMachine.DetectionStateIndicatorImage[3].color = ennemisStateMachine.Red;
+
+        //Emissive Color
+        ennemisStateMachine.EnnemiRend.material.SetColor("_EmissiveColor", ennemisStateMachine.EmissiveRed);
+
+        //Rig
+        ennemisStateMachine.EnnemiRig.weight = 1f;
     }
 
     public override void UpdatePhysics()
@@ -34,11 +40,13 @@ public class EnemiAttack : EnnemisBaseState
 
         // Definir la position de fin du lerp comme etant celle de Laika
         var EndPos = new Vector3(ennemisStateMachine.LaikaPoint.x, ennemisStateMachine.transform.position.y, ennemisStateMachine.LaikaPoint.z);
+        
 
         // Aller à la position de fin en 2 secondes
         ennemisStateMachine.transform.position = Vector3.Lerp(ennemisStateMachine.transform.position, EndPos, ennemisStateMachine.AttackDuration/2 * Time.deltaTime);
+        ennemisStateMachine.transform.LookAt(new Vector3(ennemisStateMachine.LaikaPoint.x, ennemisStateMachine.LaikaPoint.y * -0.5f, ennemisStateMachine.LaikaPoint.z));
 
-        if(timeRemaining > 0) timeRemaining -= Time.deltaTime;
+        if (timeRemaining > 0) timeRemaining -= Time.deltaTime;
         else if (timeRemaining <= 0) ennemisStateMachine.ChangeState(((EnnemisMovementSM)ennemisStateMachine).enemiPatroll);
 
     }

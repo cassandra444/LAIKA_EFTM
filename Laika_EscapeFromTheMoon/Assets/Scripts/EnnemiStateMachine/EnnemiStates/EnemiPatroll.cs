@@ -24,6 +24,12 @@ public class EnemiPatroll : EnnemisBaseState
 
         //Passer au point suivant dans le tableau de points
         ennemisStateMachine.CurrentWaypointIndex = (ennemisStateMachine.CurrentWaypointIndex + 1) % ennemisStateMachine.EnnemiPatrollPointArr.Length;
+
+        //Emissive Color
+        ennemisStateMachine.EnnemiRend.material.SetColor("_EmissiveColor", ennemisStateMachine.EmissiveBlue);
+
+        //Rig
+        ennemisStateMachine.EnnemiRig.weight = 0f;
     }
     
 

@@ -28,6 +28,12 @@ public class EnemiDetect : EnnemisBaseState
 
         //ennemisStateMachine.transform.LookAt(new Vector3(ennemisStateMachine.LaikaPoint.x, ennemisStateMachine.LaikaPoint.y * -1, ennemisStateMachine.LaikaPoint.z));
 
+        //Emissive Color
+        ennemisStateMachine.EnnemiRend.material.SetColor("_EmissiveColor", ennemisStateMachine.EmissiveYellow);
+
+        //Rig
+        ennemisStateMachine.EnnemiRig.weight = 1f;
+
 
     }
 
@@ -38,7 +44,7 @@ public class EnemiDetect : EnnemisBaseState
         if (timeRemaining > 0)
         {
             timeRemaining -= Time.deltaTime;
-            ennemisStateMachine.transform.LookAt (new Vector3(ennemisStateMachine.LaikaPoint.x, ennemisStateMachine.LaikaPoint.y * -0.5f, ennemisStateMachine.LaikaPoint.z));
+            //ennemisStateMachine.transform.LookAt (new Vector3(ennemisStateMachine.LaikaPoint.x, ennemisStateMachine.LaikaPoint.y * -0.5f, ennemisStateMachine.LaikaPoint.z));
         }
 
         //Si l'ennemi est toujours en detection et qu'il detecte laika
